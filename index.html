@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Gestión de Proyectos</title>
+</head>
+<body>
+    <h1>Gestión de Proyectos</h1>
+
+    <form id="proyectoForm">
+        <h2>Datos del Proyecto</h2>
+        <label for="nombreProyecto">Nombre del Proyecto:</label>
+        <input type="text" id="nombreProyecto" required><br><br>
+
+        <h2>Datos del Trabajador</h2>
+        <label for="nombreTrabajador">Nombre del Trabajador:</label>
+        <input type="text" id="nombreTrabajador" required><br><br>
+
+        <label for="rut_trabajador">RUT del Trabajador:</label>
+        <input type="text" id="rutTrabajador" required><br><br>
+
+        <label for="cargo_trabajador">Cargo del Trabajador:</label>
+        <input type="text" id="cargoTrabajador" required><br><br>
+
+        <button type="button" onclick="agregarTrabajador()">Agregar Trabajador</button>
+    </form>
+
+    <h2>Resultado</h2>
+    <div id="resultado"></div>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/formulario.js"></script>
+</body>
+</html>
